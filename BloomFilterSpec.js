@@ -1,4 +1,3 @@
-// Create your tests for the BloomFilter here...
 describe("BloomFilter", function() {
   var bloomFilter;
 
