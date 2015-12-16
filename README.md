@@ -64,9 +64,9 @@ Where *n* is the number of entries you plan to store, and *p* is the acceptable 
 
 # Sprint Exercises
 
-1. - [ ] Complete the BloomFilterTable class (pseudo-classical)
+- [ ] Complete the BloomFilterTable class (pseudo-classical) in BloomFilter.js
 
-2. - [ ] Pass the Specs
+- [ ] Pass the Specs
 
 	- [ ] Should return true for query on entries that were inserted
 
