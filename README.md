@@ -30,13 +30,13 @@ We intialize our 'storage' as an array of 0's, in this example we will use an ar
 
 **Entry 'Insertion'**
 
-- Our entry will be run through each function, and for every index returned, we will change the 0 to a 1
+Our entry will be run through each function, and for every index returned, we will change the 0 to a 1
 
 ![alt tag](http://blog.kiip.me/wp-content/uploads/2014/05/bloomfilterbanana.gif)
 
 **Entry 'Query'**
 
-- For a query, we do the same thing, running the entry through each hash function
+For a query, we do the same thing, running the entry through each hash function
 
 * Success (Probably exists) - storage value at every index returned via the *k* hash functions returns 1
 
@@ -46,7 +46,7 @@ We intialize our 'storage' as an array of 0's, in this example we will use an ar
 
 ![alt tag](http://blog.kiip.me/wp-content/uploads/2014/05/grape-query.png)
 
-- Notice, the moment we verify there is a 0, we know the entry definitely does NOT exist.  For large data sets this is very advantages as it prevents extra look-ups.
+Notice, the moment we verify there is a 0, we know the entry definitely does NOT exist.  For large data sets this is very advantages as it prevents extra look-ups.
 
 *credit to [Patrick Brodie](http://blog.kiip.me/engineering/sketching-scaling-bloom-filters/) for his images*
 
