@@ -65,6 +65,10 @@ Where *n* is the number of entries you plan to store, and *p* is the acceptable 
 # Sprint Exercises
 
 - [ ] Complete the BloomFilterTable class (pseudo-classical) in BloomFilter.js
+	
+	- [ ] Fill out the ```.insert()``` method to input a '1' in the storage at every index returned via the *k* hash functions on an entry
+
+	- [ ] Fill out the ```.query()``` method to return a boolean indicating whether an entry possibly exists
 
 - [ ] Pass the Specs
 
