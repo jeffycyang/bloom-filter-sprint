@@ -80,6 +80,6 @@ Where *n* is the number of entries you plan to store, and *p* is the acceptable 
 
 *Credit to Cory Dang for inspiring me to take on this assignment, without whom, I probably would not have given it a second look.  He deserves the opportunity more than I ever could or should, and I borrowed heavily from his [repo](https://github.com/coryd4ng/bloomfilter)*
 
-*credit to [Patrick Brodie](http://blog.kiip.me/engineering/sketching-scaling-bloom-filters/) for his images*
+*Credit to [Patrick Brodie](http://blog.kiip.me/engineering/sketching-scaling-bloom-filters/) for his images*
 
-*credit to [wikipedia](https://en.wikipedia.org/wiki/Bloom_filter#Optimal_number_of_hash_functions) for the formulas and their derivations*
+*Credit to [wikipedia](https://en.wikipedia.org/wiki/Bloom_filter#Optimal_number_of_hash_functions) for the formulas and their derivations*
