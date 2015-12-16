@@ -58,9 +58,9 @@ Entry 'Query'
 
 You can determine the optimal storage size, *m*, and optimal number of hash functions, *k*, via the given formulas:
 
-	![alt tag](https://upload.wikimedia.org/math/3/a/7/3a7fbb4930336523b2ebd301bb7bd159.png)
+![alt tag](https://upload.wikimedia.org/math/3/a/7/3a7fbb4930336523b2ebd301bb7bd159.png)
 
-	![alt tag](https://upload.wikimedia.org/math/b/e/f/befd3e221f8db3145948a28cb0901a13.png)
+![alt tag](https://upload.wikimedia.org/math/b/e/f/befd3e221f8db3145948a28cb0901a13.png)
 
 Where *n* is the number of entries you plan to store, and *p* is the acceptable probability for a false positive.
 
