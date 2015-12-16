@@ -38,11 +38,11 @@ We intialize our 'storage' as an array of 0's, in this example we will use an ar
 
 - For a query, we do the same thing, running the entry through each hash function
 
-	* Success (Probably exists) - storage value at every index returned via the *k* hash functions returns 1
+* Success (Probably exists) - storage value at every index returned via the *k* hash functions returns 1
 
 ![alt tag](http://blog.kiip.me/wp-content/uploads/2014/05/banana-query.png)
 
-	* Failure (Definitely does not exist) - storage value at any one index returned via the *k* hash functions returns 0
+* Failure (Definitely does not exist) - storage value at any one index returned via the *k* hash functions returns 0
 
 ![alt tag](http://blog.kiip.me/wp-content/uploads/2014/05/grape-query.png)
 
@@ -62,11 +62,11 @@ Where *n* is the number of entries you plan to store, and *p* is the acceptable 
 
 *credit to [wikipedia](https://en.wikipedia.org/wiki/Bloom_filter#Optimal_number_of_hash_functions) for the formulas and their derivations*
 
-# Sprint
+# Sprint Exercises
 
-1. [ ] Complete the BloomFilterTable class (pseudo-classical)
+1. - [ ] Complete the BloomFilterTable class (pseudo-classical)
 
-2. [ ] Pass the Specs
+2. - [ ] Pass the Specs
 
 	- [ ] Should return true for query on entries that were inserted
 
