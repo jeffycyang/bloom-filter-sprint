@@ -17,7 +17,7 @@
 - extremely memory/space-efficient, you do not need to store the actual elements, you only keep track of the possibility of their existence
 - Prevents extra work looking-up elements that do NOT exist (once you hit a 0, return non-existence - to be elaborated on later)
 - Time complexity for adding entries and looking up entries (actually, the possibility of the entry) is O(*k*) where *k* is the number of hash functions - bloom filter's become even more amazing because, in practice, these k lookups are independent and can be parallelized
-- Because the unlikelihood of getting a collision across all hash functions, the number of false positives can be effectively reduced
+- Because of the unlikelihood of getting a collision across all hash functions, the number of false positives can be effectively reduced
 
 ### Disadvantages
 
