@@ -2,7 +2,7 @@
 
 ## Key Characteristics
 	
-- Probabilistic Data Structure - that is, there is a chance for an error, but the advantage is that it is memory/space-efficient compared to'conventional' error-free data structures that utilizing hashing, which would otherwise require an enourmouse amount of memory/space
+- Probabilistic Data Structure - that is, there is a chance for an error, but the advantage is that it is memory/space-efficient compared to'conventional' error-free data structures that utilizing hashing, which would otherwise require an enormous amount of memory/space
 
 - Returns only False Postives, no False Negatives - a database query can only return two possible outcomes: 'Probably in database' or 'Definitely NOT in database'
 
@@ -12,20 +12,16 @@
 
 - A bloom filter does not store the ACTUAL element, this is a crucial characteristic - it's not used to test whether an entry exists, only that an entry definitely does NOT exist (since there can NOT be any false negatives)
 
-## Advantages
+### Advantages
 
 - extremely memory/space-efficient, you do not need to store the actual elements, you only keep track of the possibility of their existence
-
 - Prevents extra work looking-up elements that do NOT exist (once you hit a 0, return non-existence - to be elaborated on later...)
-
 - Time complexity for adding entries and looking up entries (actually, the possibility of the entry) is O(k) where k is the number of hash functions - bloom filter's become even more amazing because, in practice, these k lookups are independent and can be parallelized
-
 - Because the un-likelihood of getting a collision across all hash functions, the number of False Positives can be reduced very effectively
 
-## Disadvantages
+### Disadvantages
 
 - There is the possibility of False Positives - you can't be absolutely certain an entry you queried for is really in the database
-
 - Database entries cannot be removed (caveat: can be addressed with the addition of a so-called 'counting' filter)
 
 ## Brief Example
@@ -54,7 +50,7 @@ Entry 'Query'
 
 *credit to [Patrick Brodie](http://blog.kiip.me/engineering/sketching-scaling-bloom-filters/) for his images*
 
-## The Math for Optimal Storage Size and Number of Hash Functions
+## Optimal Storage Size and Number of Hash Functions
 
 You can determine the optimal storage size, *m*, and optimal number of hash functions, *k*, via the given formulas:
 
@@ -66,12 +62,16 @@ Where *n* is the number of entries you plan to store, and *p* is the acceptable 
 
 *credit to [wikipedia](https://en.wikipedia.org/wiki/Bloom_filter#Optimal_number_of_hash_functions) for the formulas and their derivations*
 
-## Sprint
+# Sprint
 
-- [ ] Complete the BloomFilterTable class (pseudo-classical)
+1. [ ] Complete the BloomFilterTable class (pseudo-classical)
 
-- [ ] Pass the Specs
+2. [ ] Pass the Specs
+
+	- [ ] Should return true for query on entries that were inserted
+
+	- [ ] Should return false for query on entries that were not inserted
 
 ## Credit
 
-*Credit to Cory Dang for inspiring me to take on this assignment, without whom, I probably would not have given it a second look.  He deserves the opportunity more than I ever could or should.*
+*Credit to Cory Dang for inspiring me to take on this assignment, without whom, I probably would not have given it a second look.  He deserves the opportunity more than I ever could or should, and I borrowed heavily from his [repo](https://github.com/coryd4ng/bloomfilter)*
