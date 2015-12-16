@@ -2,14 +2,9 @@ var BloomFilter = function(n, p) {
   // Initialize storage.
   this.storage = [];
   // Calculate the optimal set size.
-  this.m = (-1) * (n * Math.log(p)) / (Math.pow(Math.log(2), 2));
+  this.m;
   // Calculate the optimal number of hash functions.
-  this.k = (this.m / n) * Math.log(2);
-
-  // Initiliaze all m storage values to 0
-  for (var j = 0; j < this.m; j++) {
-    this.storage[j] = 0;
-  }
+  this.k;
 
   /**
    DO NOT EDIT THE CODE BETWEEN THE ASTERISKS
@@ -29,20 +24,11 @@ var BloomFilter = function(n, p) {
 };
 
 BloomFilter.prototype.insert = function(entry) {
-  for (var fxn in this.hash) {
-    var i = this.hash[fxn].index(entry);
-    this.storage[i] = 1;
-  }
+
 };
 
 BloomFilter.prototype.query = function(entry) {
-  for (var fxn in this.hash) {
-    var i = this.hash[fxn].index(entry);
-    if (this.storage[i] === 0) {
-        return false;
-    }
-  }
-  return true;
+
 };
 
 /**
