@@ -8,7 +8,7 @@ var BloomFilter = function(n, p) {
 
   /**
    DO NOT EDIT THE CODE BETWEEN THE ASTERISKS
-   this storage and for-loop, will create your 'k' hash functions
+   This storage and for-loop, will create your 'k' hash functions
    **/
   /**************************************/
 
@@ -33,7 +33,7 @@ BloomFilter.prototype.query = function(entry) {
 
 /**
  DO NOT EDIT THE CODE BEWTEEN THE ASTERISKS
- this is a Hash function class, don't worry about what it does, just know
+ This is a Hash function class, don't worry about what it does, just know
  that it will return to you a hash function that converts a string into an
  integer with near uniform-distribution between 0 and 'max' 
  **/
@@ -44,7 +44,7 @@ var Hash = function(magic, max) {
     this.max = max;
 };
 
-// this method will return an index between 0 and 'max' for a given key
+// This method will return an index between 0 and 'max' for a given key
 Hash.prototype.index = function (key) {
   var salt = 5381;
   for (var i = 0; i < key.length; i++) {
@@ -55,3 +55,7 @@ Hash.prototype.index = function (key) {
 };
 
 /**************************************/
+
+/** 
+ Credit to Cory Dang for his hash function class 
+ **/

@@ -42,11 +42,11 @@ Entry 'Query'
 
 - For a query, we do the same thing, running the entry through each hash function
 
--- Success (Probably exists)
+	- Success (Probably exists)
 
 ![alt tag](http://blog.kiip.me/wp-content/uploads/2014/05/banana-query.png)
 
--- Failure (Definitely does not exist)
+	- Failure (Definitely does not exist)
 
 ![alt tag](http://blog.kiip.me/wp-content/uploads/2014/05/grape-query.png)
 
@@ -75,4 +75,3 @@ Where *n* is the number of entries you plan to store, and *p* is the acceptable 
 ## Credit
 
 *Credit to Cory Dang for inspiring me to take on this assignment, without whom, I probably would not have given it a second look.  He deserves the opportunity more than I ever could or should.*
-
