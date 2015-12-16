@@ -1,4 +1,4 @@
-// Create your tests for the hashTable here...
+// Create your tests for the BloomFilter here...
 describe("BloomFilter", function() {
   var bloomFilter;
 
@@ -13,12 +13,12 @@ describe("BloomFilter", function() {
 
   it('should return true for entries that were inserted', function() {
     bloomFilter.insert('banana');
-    expect(hashTable.query('banana')).toBe(true);
+    expect(bloomFilter.query('banana')).toBe(true);
   });
 
   it('should return false for entries that were not inserted', function() {
-    hashTable.insert('apple');
-    expect(hashTable.query('grape')).toBe(false);
+    bloomFilter.insert('apple');
+    expect(bloomFilter.query('grape')).toBe(false);
   });
 
 });
