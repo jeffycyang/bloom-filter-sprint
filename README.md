@@ -74,5 +74,5 @@ Where *n* is the number of entries you plan to store, and *p* is the acceptable 
 
 ## Credit
 
-- Credit to Cory Dang for inspiring me to take on this assignment, without whom, I probably would not have given it a second look.  He deserves the opportunity more than I ever could or should.
+*Credit to Cory Dang for inspiring me to take on this assignment, without whom, I probably would not have given it a second look.  He deserves the opportunity more than I ever could or should.*
 
